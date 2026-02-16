@@ -1,0 +1,81 @@
+JavaScript Operators 🔧
+
+Operators are symbols that perform operations on values.
+
+1️⃣ Arithmetic Operators
+let a = 10;
+let b = 3;
+
+a + b   // 13  (Addition)
+a - b   // 7   (Subtraction)
+a * b   // 30  (Multiplication)
+a / b   // 3.33 (Division)
+a % b   // 1   (Modulus - remainder)
+a ** b  // 1000 (Power)
+
+2️⃣ Assignment Operators
+let x = 10;
+
+x += 5;  // x = x + 5
+x -= 2;  // x = x - 2
+x *= 3;  // x = x * 3
+x /= 2;  // x = x / 2
+
+3️⃣ Comparison Operators
+
+(Return true / false)
+
+10 == "10"   // true  (value only)
+10 === "10"  // false (value + type)
+10 != 5      // true
+10 !== "10"  // true
+10 > 5       // true
+10 <= 10     // true
+
+
+🔥 Interview tip: Always use ===
+
+4️⃣ Logical Operators
+true && false  // AND → false
+true || false  // OR  → true
+!true          // NOT → false
+
+
+Example:
+
+age >= 18 && age <= 60
+
+5️⃣ String Operators
+"Hello" + " World"   // "Hello World"
+"Age: " + 20        // "Age: 20"
+
+6️⃣ Increment / Decrement
+let i = 5;
+
+i++;  // 6  (post-increment)
+++i;  // 7  (pre-increment)
+
+i--;  // 6
+--i;  // 5
+
+7️⃣ Ternary Operator
+let result = (age >= 18) ? "Adult" : "Minor";
+
+8️⃣ Type Operators
+typeof 10        // "number"
+typeof "JS"      // "string"
+typeof true      // "boolean"
+
+9️⃣ Bitwise Operators (Basic)
+5 & 1   // AND
+5 | 1   // OR
+5 ^ 1   // XOR
+
+Quick Summary Table 🧠
+Category	Operators
+Arithmetic	+ - * / % **
+Assignment	= += -= *=
+Comparison	== === != !== > <
+Logical	&&
+Ternary	? :
+Type	typeof

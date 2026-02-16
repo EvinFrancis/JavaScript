@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="mark"></h1>
+
+    <script>
+        let p=0;
+        let total=0;
+        sub1=parseInt(prompt("enter subject 1 marks :"))
+        sub2=parseInt(prompt("enter subject 2 marks :"))
+        sub3=parseInt(prompt("enter subject 3 marks :"))
+        sub4=parseInt(prompt("enter subject 4 marks :"))
+        sub5=parseInt(prompt("enter subject 5 marks :"))
+        total=sub1+sub2+sub3+sub4+sub5
+        p=(total/500)*100
+        let data="";
+        data += "total marks : "+ total +"<br>" // concatenation of string and number in each iteration and storing in data variable
+        data += "percentage : "+ p +"<br>" // concatenation of string and number
+        if(p>=90){
+            console.log("grade A")
+            document.getElementById("mark").innerHTML=data + "grade A" // displaying the value of data variable in h1 tag with id mark
+
+        }
+        else if (p>=80){
+            console.log("grade B")
+             document.getElementById("mark").innerHTML=data + "grade B"
+
+        }
+        else if (p>=70){
+            console.log("grade C")
+             document.getElementById("mark").innerHTML=data + "grade C"
+
+        }
+        else if (p>=60){
+            console.log("grade D")
+             document.getElementById("mark").innerHTML=data + "grade D"
+
+        }
+        else{
+            console.log("grade F")
+             document.getElementById("mark").innerHTML=data + "grade F"
+
+             
+
+        }
+    </script>
+</body>
+</html>

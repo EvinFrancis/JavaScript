@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <h1 id="demo"></h1>
+
+    <script>
+        x=parseInt(prompt("enter the value of x"))
+        let data=0;
+        for (let i=1;i<=10;i++){
+        
+            data += i +"*"+ x +"="+ i*x +"<br>" // concatenation of string and number in each iteration and storing in data variable
+            
+            document.write(i +"*"+ x +"==="+ i*x +"<br>",data)
+            
+            console.log(i +"*"+ x +"="+ i*x,data )
+
+        }
+
+                    document.getElementById("demo").innerHTML=data ;// displaying the value of data variable in h1 tag with id demo
+
+    </script>
+    
+</body>
+</html>
