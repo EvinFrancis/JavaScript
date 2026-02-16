@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let num1=parseInt(prompt("Enter a three digit number"))
+        let leng=num1.toString().length // toString() converts the number to a string, and length gives the number of characters in the string
+        let temp=0
+        let digit=0
+        let sum=0
+        temp=num1
+        while(num1>0){
+
+            
+            digit=num1%10
+            sum=sum+digit**leng // ** is the exponentiation operator, it raises the digit to the power of leng
+            num1=Math.floor(num1/10);// Math.floor() is used to round down the result to the nearest integer
+
+            console.log(num1,sum,digit)
+
+
+
+        }
+        if(sum==temp){
+            console.log(sum +" amstrong number")
+        }
+        else{
+            console.log("not amstrong number...")
+        }
+    </script>
+</body>
+</html>
