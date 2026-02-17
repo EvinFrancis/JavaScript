@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let f=0
+        let s=1
+        console.log(f)
+        console.log(s)
+        let t=0
+        let n=parseInt(prompt("numebr of trems : "))
+
+        for(let i=2;i<n;i++){
+            
+            t=f+s
+            f=s
+            s=t
+            console.log(t)
+            document.write(t+"<br>")
+
+        }
+    </script>
+</body>
+</html>
