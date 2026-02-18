@@ -8,6 +8,7 @@
 <body>
 
     <h1 id="i"></h1>
+    <h1 id="re"></h1>
     
 
     <script>
@@ -24,6 +25,14 @@
                                                  + "Place :"+student.place+"<br>"
                                                  + "Course :"+student.course+"<br>"
                                                  + "Mobile :"+student.mobile+"<br>"
+
+        document.getElementById("re").innerHTML="Student Name :"+student["name"]+"<br>"
+                                                + student["age"]+"<br>"+
+                                                student["course"] +"<br>"+
+                                                student["mobile"] + "<br>"+
+                                                student["place"]+"<br>"
+                                                
+                                            
     </script>
 </body>
 </html>

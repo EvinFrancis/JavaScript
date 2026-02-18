@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function calculator(x,y){
+            
+            opt=prompt("enter the option :"+
+                "A for Addition..       "+
+                "B for Subtraction...   "+
+                "C for multiplication...  "+
+                "D for division...        "
+            ).toUpperCase()
+
+            if(opt=="a"||opt=="A"){
+                return x+y
+            }
+            else if( opt=="b"||opt=="B"){
+                return x-y
+            }
+            else if( opt=="c"||opt=="C"){
+                return x*y
+            }else if( opt=="d"||opt=="D"){
+                if (y==0){
+                    return "zero divsion not posiible.."
+                }
+            else{
+                
+                return division(x,y)
+                }
+            }
+            else {
+                return "Invalid input ;;;;"
+            }
+           
+        }
+         
+num1=parseInt(prompt("Enter a number:"))
+num2=parseInt(prompt("Enter a number:"))
+
+       document.write( "result is  : "+calculator(num1,num2))
+    </script>
+    
+</body>
+</html>
+
+
