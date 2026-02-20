@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" style=" text-align: center; margin-top: 100px; " method="post"
+         onsubmit=" return form_validation()">
+            <input type="text" placeholder="Name" name="" id="name" style="padding: 10px;"><br>
+            <input type="email" placeholder="Email" name="" id="email"style="padding: 10px;"><br>
+            <input type="number" placeholder="Mobile" name="" id="mobile"style="padding: 10px;"><br>
+            <input type="submit" value="Submit"style="padding: 10px; margin-top: 10px; ">
+        </form>
+    </div>
+    
+
+    <script>
+        function form_validation(){
+            let name=document.getElementById("name").value;
+            let email=document.getElementById("email").value;
+            let mobile=document.getElementById("mobile").value;
+            if(name==''){
+                alert("Name are required")
+                return false;
+            }
+            else if(email==''){
+                alert("Email is required")
+                return false;
+            }
+             else if(mobile==''){
+                alert("mobile is required")
+                return false;
+            }
+            else if(mobile.length !=10){
+                alert("mobile number should be 10 digits")
+                return false;
+            }
+            else{
+                alert ("form submitted successfully")
+                return true
+            }
+        }
+    </script>
+</body>
+</html>

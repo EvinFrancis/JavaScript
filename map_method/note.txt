@@ -1,0 +1,54 @@
+
+map() does not change the original array
+
+It returns a new array
+
+It runs the function once for each element
+
+
+
+
+
+Simple example
+const numbers = [1, 2, 3, 4];
+
+const doubled = numbers.map(n => n * 2);
+
+console.log(doubled); // [2, 4, 6, 8]
+
+
+
+
+
+
+
+
+
+
+
+
+Interview-friendly one-liner
+
+
+
+
+
+
+
+
+
+
+
+
+
+"map() is used when we want to transform every element of an array and get a new array of the same length."
+
+If you want, I can also:
+
+correct definitions for filter & reduce
+
+give 1-line interview answers
+
+or show common mistakes with map()
+
+Just tell me 😊
