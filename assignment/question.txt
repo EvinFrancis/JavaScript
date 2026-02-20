@@ -1,0 +1,5 @@
+1.Reomove dupliacates elemsents from an array.
+2.Reverse a number suing a loop.
+3.count the number of digits  in a given number
+4.revers a array
+5,write a function that primts all even number from an array
