@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style=" margin: auto;padding: auto;">
+        <button class="btn1">Click here to hide</button>
+        <button class="btn2">Click here to show</button>
+        <h1 class="h">welocome</h1>
+    </div>
+
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $('.btn1').click(function(){
+                    $('.h').hide()
+                    
+                })
+
+                $('.btn2').click(function(){
+                    $('.h').show()
+                })
+            })
+
+        </script>
+</body>
+</html>

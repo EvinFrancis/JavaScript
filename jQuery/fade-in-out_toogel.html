@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="div1" style="width: 600px; height: 200px; background-color: red; display: none;"></div>
+    <div class="div2" style="width: 600px; height: 200px; background-color: rgb(86, 185, 20);display: none;"></div>
+    <div class="div3" style="width: 600px; height: 200px; background-color: rgb(59, 16, 139);display: none;"></div>
+<button class="btn">click here</button>
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.btn').click(function() {
+            $('.div1').fadeIn(1000);
+            $('.div2').fadeIn(1000);
+            $('.div3').fadeIn(1000);
+
+        })
+    })
+</script>
+</body>
+</html>
